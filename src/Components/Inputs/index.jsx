@@ -1,5 +1,4 @@
 import { useState, forwardRef } from "react";
-import "./inputs.css";
 
 const FormInput = ({
   value,
@@ -49,7 +48,7 @@ const FormInput = ({
         {...props}
       />
       {required && errorMessage && (
-        <div className="errorMessage">{errorMessage}</div>
+        <div className="text-[red] mt-1 text-sm ">{errorMessage}</div>
       )}
     </div>
   );
